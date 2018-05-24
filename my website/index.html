@@ -9,6 +9,10 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/github-io.css">
+	
+	<!--Bootstrap jQuery-->
+	
+	
   </head>
   <body id="home">
 		<!-- page content -->
@@ -72,7 +76,9 @@
 					</div>
 					<div class="col-md-4 mt-5 px-2">
 						<h3>Skills</h3>
-							<ul class="list-group">
+						<style>li{list-style: none;}</style>
+						<button>Click to Show/Hide Skills</button>
+						<ul class="list-group">
 								<li class="list-group-item">
 									<a class="nav-link" href="#skills">Bootstrap HTML/CSS</a>
 								</li>
@@ -91,7 +97,8 @@
 								<li class="list-group-item">
 									<a class="nav-link" href="#skills">SAS/STATA/R/SPSS</a>
 								</li>
-							</ul>
+							</ul><br><br>
+							
 					</div>
 				</div>
 			</div>
@@ -192,7 +199,17 @@
 		<!-- /page content -->
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+		<script>
+
+		$(document).ready(function(){
+			$("button").click(function(){
+				$(".list-group").slideToggle("slow");
+			});
+		});
+		
+		</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>
 </html>
