@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<body background="./img/pizza.jpg">
+	<title>Portland Pietro's Original Casa di Pizza</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<div id="menuBG">
+				<h1>Portland Pietro's Original Casa di Pizza</h1>
+					<form id="frmMenu">
+						<div class="menu">
+							<h3>Select Your Size:</h3>
+							<input class="size" type="radio" name="Size" value="Personal Pizza"> Personal Pizza (12")<br>
+							<input class="size" type="radio" name="Size" value="Medium Pizza"> Medium Pizza (14")<br>
+							<input class="size" type="radio" name="Size" value="Large Pizza" checked> Large Pizza (16")<br>
+							<input class="size" type="radio" name="Size" value="Extra Large Pizza"> Extra Large Pizza (18")<br>
+							<input class="size" type="radio" name="Size" value="Neighborhood Pizza"> Feed The Neighborhood Pizza (36")<br>
+						</div>
+					<br><br>
+						<div class="menu">
+							<h3>Meet Your Meats:</h3>
+							<input class="meats" type="checkbox" name="Meat" value="Pepperoni"> Nitrate Free Pepperoni<br>
+							<input class="meats" type="checkbox" name="Meat" value="Sausage"> Artisinal Fennel Sausage <br>
+							<input class="meats" type="checkbox" name="Meat" value="Canadian Bacon"> House Cured Happy Canadian Bacon<br> 
+							<input class="meats" type="checkbox" name="Meat" value="Ground Beef"> Grass Fed Ground Beef<br>
+							<input class="meats" type="checkbox" name="Meat" value="Anchovy"> Wild Northwest Anchovy<br>
+							<input class="meats" type="checkbox" name="Meat" value="Chicken"> Free Range Crispy Chicken<br>
+							<input class="meats" type="checkbox" name="Meat" value="Duck"> Confit Duck Leg<br>
+							<input class="meats" type="checkbox" name="Meat" value="Lamb"> Organic Roast Lamb<br>
+							<input class="meats" type="checkbox" name="Meat" value="Bison"> Pasture Raised Bison Meatball<br>
+							<input class="meats" type="checkbox" name="Meat" value="Ham"> Dignified Heritage Ham<br>
+						
+						</div>
+						<div class="menu">
+							<h3>Verify Your Veggies:</h3>
+							<input class="veggies" type="checkbox" name="Veggies" value="Tomatoes"> San Marzano Style Tomatoes<br>
+							<input class="veggies" type="checkbox" name="Veggies" value="Spinach"> Organic Spinach <br>
+							<input class="veggies" type="checkbox" name="Veggies" value="Mushrooms"> Hand Foraged Wild Mushrooms<br> 
+							<input class="veggies" type="checkbox" name="Veggies" value="Asparagus"> Native Picked Asparagus<br>
+							<input class="veggies" type="checkbox" name="Veggies" value="Broccolini"> Hand Watered Broccolini<br>
+							<input class="veggies" type="checkbox" name="Veggies" value="Jalapenos"> Sun Soaked Jalapenos<br>
+							<input class="veggies" type="checkbox" name="Veggies" value="Onions"> Sliced Sweet Onions<br> 
+							<input class="veggies" type="checkbox" name="Veggies" value="Olives"> Cured Heirloom California Olives<br>
+							<input class="veggies" type="checkbox" name="Veggies" value="Peppers"> Heritage Green Peppers<br>
+							<input class="veggies" type="checkbox" name="Veggies" value="Pineapple"> Sustainable Diced Pineapple<br>
+						</div>
+						
+						<div class="menu">
+							<h3>Choose Your Cheese:</h3>
+							<input class="cheese" type="radio" name="Cheese" value="Regular Cheese" checked> Regular Cheese<br>
+							<input class="cheese" type="radio" name="Cheese" value="Vegan Cheese"> Vegan<br>
+							<input class="cheese" type="radio" name="Cheese" value="No Cheese"> No Cheese<br>
+							<input class="cheese" type="radio" name="Cheese" value="Extra Cheese"> Extra Cheese<br>
+						</div>
+						<div class="menu">
+							<h3>Select Your Sauce</h3>
+							<input class="sauce" type="radio" name="Sauce" value="Marinara" checked> Marinara Sauce<br>
+							<input class="sauce" type="radio" name="Sauce" value="White">Creamy White Alfredo Sauce<br>
+							<input class="sauce" type="radio" name="Sauce" value="No Sauce"> Garlic and Oregano (No Sauce)<br>
+							<input class="sauce" type="radio" name="Sauce" value="Barbecue"> No Sugar Added Barbecue Sauce<br>
+						</div>
+						<div class="menu">
+							<h3>Create Your Crust</h3>
+							<input class="crust" type="radio" name="Crust" value="Plain" checked> Plain Crust<br>
+							<input class="crust" type="radio" name="Crust" value="Garlic Butter">Garlic Butter Crust<br>
+							<input class="crust" type="radio" name="Crust" value="Cheese Stuffed Crust"> Cheese Stuffed Crust<br>
+							<input class="crust" type="radio" name="Crust" value="Spicy"> Spicy Crust<br>
+							<input class="crust" type="radio" name="Crust" value="House Special"> House Special Crust<br>
+						</div>
+					
+					<div id="cart">
+
+						
+						<div id="showText"></div>
+						<div id="totalPrice"></div>
+					</div>
+				</form>
+			</div>
+					<button onclick="getReceipt()">Place Order</button>
+					<button onclick="getElementById('demo').innerHTML=Date()">Hey, what is the time?</button>
+
+					<p id="demo"></p>
+  <script src="js/scripts.js"></script>
+</body>
+</html>
